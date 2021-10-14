@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import InputMask from 'react-input-mask';
 
 import api from '../../services/api';
 
@@ -81,7 +82,9 @@ class BuscaCep extends Component {
                 }
 
 				<Form onSubmit={this.handleSubmit}>
-					<input type="text" maxlength={8} value={this.state.cep} placeholder='Digite um Cep' onChange={this.onChangeCep}/>
+					<input type='text'  maxlength={8} value={this.state.cep}  placeholder='Digite um Cep' onChange={this.onChangeCep}/>
+					
+					
 					<input type="submit" value="Buscar" />
 				</Form>
 

@@ -34,7 +34,7 @@ router.route('/search').post(async (request, response) => {
 
         if (!validCep(cep)) {
             //Caso não retorne uma resposta BAD REQUEST
-            return response.status(400).json({
+            return response.status(406).json({
                 success: false,
                 message: 'CEP inválido'
             });
