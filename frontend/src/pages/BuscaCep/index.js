@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputMask from 'react-input-mask';
+
 
 import api from '../../services/api';
 
